@@ -1,0 +1,208 @@
+﻿body {
+  font-family: 'Ruluko', sans-serif;
+}
+
+div.grid {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/grid.png);
+}
+
+div.page-background {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/dj.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+nav a {
+  color: #fff !important;
+}
+
+.navbar-inverse {
+  background-color: #DF0000;
+  border-color: #D30707;
+}
+
+.navbar-brand > img.navbar-logo {
+  display: inline-block;
+  width: 28px;
+  height: 30px;
+}
+
+#home {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.head-main {
+  font-family: 'Rock Salt', cursive;
+  font-size: 8em;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+#home a + a {
+  margin-left: 20px;
+}
+
+section {
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+.for-full-back {
+  opacity: 0.9;
+}
+
+.color-white {
+  background-color:#fff !important;
+}
+
+h1 {
+  line-height: 120px;
+  text-transform: uppercase;
+  color: #DF0000;
+}
+
+h4 {
+  font-family: 'Arimo', sans-serif;
+  line-height:30px;
+  padding-bottom:40px;
+}
+
+.parallax {
+  padding: 0;
+  min-height:300px;
+}
+
+.parallax-dark {
+  background-color: rgba(0,0,0,0.9);
+}
+
+#music-sec iframe {
+  height: 350px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.featured {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.event-img {
+  width: 315px;
+  height: 400px;
+  display: block;
+  transition: all 0.1s ease;
+  text-decoration: none !important;
+}
+
+.event-img:hover {
+  transform: scale(1.1,1.1);
+  position: relative;
+}
+
+.event-img:hover::after {
+  content: 'FEATURED EVENT';
+  font-family: 'Rock Salt', cursive;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  background-color: rgba(0,0,0,0.75);
+  position: relative;
+  bottom: 40px;
+  display: block;
+}
+
+.event-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#merchandise {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#merchandise img {
+  margin: 20px;
+  width: 230px;
+  height: 250px;
+}
+
+div.flabeaker {
+  width: 250px;
+  height: 280px;
+  background-image: url('../img/flabeaker.png');
+  background-size: cover;
+  display: inline-block;
+}
+
+#social-icon {
+  margin-top: 30px;
+}
+
+#social-icon a {
+  color: #616161 !important;
+  margin-right: 10px;
+}
+
+#footer {
+  background-color:#000;
+  color:#fff;
+  padding: 20px 50px 20px 50px;
+  text-align:right;
+}
+
+@media only screen and (min-width : 320px) {
+  .head-main {
+    font-size: 3em;
+  }   
+}
+
+@media only screen and (min-width : 480px) {
+  .head-main {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .head-main {
+    font-size: 7em;
+  }
+  .contact-cls {
+    float: left;
+  }
+  .float-right {
+    float: right;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .head-main {
+    font-size: 8em;
+  }
+}
