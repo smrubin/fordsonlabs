@@ -12,7 +12,7 @@ var plugins = require('gulp-load-plugins')({
   replaceString: /\bgulp[\-.]/
 });
 
-// Copy over html
+// Copy and minify HTML
 gulp.task('html', function() {
   return gulp.src(src + 'index.html')
     .pipe(plugins.htmlmin({collapseWhitespace: true}))
@@ -37,6 +37,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest(dest + 'img'));
 });
 
+gulp.task('copy', function() {
+  return gulp.src([src + '404.html', src + '.htaccess', src + '*.png', src + '*.xml', src + '*.txt'])
+    .pipe(gulp.dest(dest));
+});
+
 // Watch for changes in files
 gulp.task('watch', function() {
   gulp.watch(src + 'index.html', ['html']);
@@ -45,4 +50,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['html', 'css', 'images', 'watch']);
+gulp.task('default', ['html', 'css', 'images', 'copy', 'watch']);
